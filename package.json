@@ -1,0 +1,11 @@
+{
+  "name": "entre-paginas",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "test": "html-validate ."
+  },
+  "devDependencies": {
+    "html-validate": "11.23.0"
+  }
+}
