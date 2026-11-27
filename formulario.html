@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proponer una lectura | Entre páginas</title>
+  <link rel="stylesheet" href="estilos.css">
+  <script src="ficha.js" defer></script>
+</head>
+<body>
+  <header class="cabecera">
+    <span class="marca">Entre páginas</span>
+    <a href="index.html">Volver al club</a>
+  </header>
+  <main>
+    <p class="seccion">Club de lectura</p>
+    <h1>Proponer una lectura</h1>
+    <p class="entrada">¿Qué te gustaría leer con el club? Descarga una ficha con tu recomendación y tus datos de contacto. Cuando quieras compartirla, tendrás el archivo a mano.</p>
+    <form id="ficha">
+      <div class="contacto">
+        <div>
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" type="text" autocomplete="name" pattern=".*\S.*" required>
+        </div>
+        <div>
+          <label for="correo">Correo electrónico</label>
+          <input id="correo" name="correo" type="email" autocomplete="email" required>
+        </div>
+      </div>
+      <label for="titulo">Título de la lectura</label>
+      <input id="titulo" name="titulo" type="text" pattern=".*\S.*" required>
+      <label for="motivo">¿Por qué la elegiste? (opcional)</label>
+      <textarea id="motivo" name="motivo" rows="3"></textarea>
+      <button id="descargar" type="submit" disabled>Descargar mi ficha</button>
+      <noscript><p>Activa JavaScript para descargar la ficha.</p></noscript>
+      <p id="aviso" role="status"></p>
+    </form>
+  </main>
+</body>
+</html>
